@@ -3,8 +3,8 @@ import numpy.matlib
 from matplotlib import pyplot as plt
 import scipy.io
 from scipy.interpolate import PPoly
-from windSymPython.f_powerPlants_f1 import f_powerPlants_f1
-from windSymPython.f_powerPlants_f2 import f_powerPlants_f2
+from f_powerPlants_f1 import f_powerPlants_f1
+from f_powerPlants_f2 import f_powerPlants_f2
 import time
 from pathlib import Path
 
@@ -103,7 +103,7 @@ def test1():
     size = [20, 20]
     n_windmills = 20
 
-    mat_data = scipy.io.loadmat('dt/WindSym_1.mat')
+    mat_data = scipy.io.loadmat('../windSym/dt/WindSym_1.mat')
     vVec = mat_data['vVec']
 
     gr = np.array([1] * n_windmills + [0] * (size[0]*size[1] - n_windmills))
@@ -122,7 +122,7 @@ def test1():
     print(f"execution time: {(end-start)}")
 
 def ppval_test():
-    mat_data = scipy.io.loadmat('dt/pwrCurve.mat')
+    mat_data = scipy.io.loadmat('./dt/pwrCurve.mat')
     ppPower_aux = mat_data['ppPower'][0,0]
     ppPower = {"breaks":ppPower_aux[1].flatten(), "coefs":np.flip(ppPower_aux[2],1)}
     ppPower = PPoly(ppPower_aux[2].T, ppPower_aux[1].flatten())

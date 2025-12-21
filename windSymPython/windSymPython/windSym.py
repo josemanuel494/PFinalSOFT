@@ -39,9 +39,9 @@ gr = [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
       [0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
       [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]
 
-[pwr_T2,gan_T2,cost_T2,obj_T2] = f_powerPlantsT_fast(WindSym_1['vVec'],np.copy(gr));
+[pwr_T2,gan_T2,cost_T2,obj_T2] = f_powerPlantsT_fast(WindSym_1['vVec'],np.copy(gr))
 
-print('Potencia Total de %d Turbinas dispuestas aleatoriamente en un grid de %dx%d durante 1 año de simulación:\n'% (Nturb,Kgr,Kgr));
+print('Potencia Total de %d Turbinas dispuestas aleatoriamente en un grid de %dx%d durante 1 año de simulación:\n'% (Nturb,Kgr,Kgr))
 print(pwr_T2)
 
 #

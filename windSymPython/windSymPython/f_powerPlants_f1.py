@@ -1,6 +1,6 @@
 import numpy as np
 import math
-from windSymPython.polygon import Polygon
+from polygon import Polygon
 
 
 
