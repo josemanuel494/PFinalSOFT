@@ -31,3 +31,4 @@ Evaluación: 384, Nueva mejor potencia: 53014611.35 MW
 Evaluación: 414, Nueva mejor potencia: 53028130.49 MW
 Evaluación: 467, Nueva mejor potencia: 53029821.02 MW
 Evaluación: 0.5| T=10.14 | Actual=53029821.02 | Mejor=53029821.02
+=== PARA POR ESTANCAMIENTO === Última mejor potencia: 53029821.02 MW
