@@ -11,14 +11,14 @@ import logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(message)s",
-    handlers=[logging.FileHandler("windSymPython/windSymPython/log.txt", mode="w")]
+    handlers=[logging.FileHandler("windSymPython/windSymPython/log.txt", mode="w", encoding="utf-8")]
 )
 
 # Parámetros iniciales
 N_TURBINAS = 20     # o 50 turbinas
 GRID_SIZE  = 20     # o 50 x 50
 N_CELDAS   = GRID_SIZE * GRID_SIZE
-MAX_EVALUACIONES = 1000 
+MAX_EVALUACIONES = 3000 
 
 
 def cargar_datos_viento(): 
@@ -91,10 +91,10 @@ def sa(vVec):
     T_inicial = 10000.0
     T_final = 0.01
 
-    MAX_ESTANCAMIENTO = 100     # límite de estancamiento, 
+    # MAX_ESTANCAMIENTO = 100     # límite de estancamiento, 
                             # si pasa de este límite y no 
                             # hay mejor el algoritmo para. 
-    contador_estancamiento = 0
+    # contador_estancamiento = 0
 
     # Alpha para la actualización de la temperatura
     alpha = (T_final / T_inicial) ** (1.0 / MAX_EVALUACIONES)
@@ -142,12 +142,12 @@ def sa(vVec):
             if potencia_vecina > mejor_potencia : 
                 mejor_potencia = potencia_vecina
                 mejor_solucion = np.copy(solucion_vecina)
-                contador_estancamiento = 0  # hay mejora, se reinicia el contador
-                logging.info(f"Evaluación: {evaluaciones}, Nueva mejor potencia: {mejor_potencia:.2f} MW")
+                # contador_estancamiento = 0  # hay mejora, se reinicia el contador
+                logging.info(f"Evaluación: {evaluaciones:2}, Nueva mejor potencia: {mejor_potencia:.2f} MW, Temperatura: {t_actual:.2f}")
         
         else :  # Delta negativo
             # Es peor solución, se acepta con una probabilidad
-            contador_estancamiento += 1
+            # contador_estancamiento += 1
             probabilidad = np.exp(delta / t_actual)
 
             if np.random.rand() < probabilidad :
@@ -163,11 +163,11 @@ def sa(vVec):
         historial_fitness.append(mejor_potencia)
 
         # Comprobar el criterio de estancamiento
-        if contador_estancamiento >= MAX_ESTANCAMIENTO :
-            print(" === PARA POR ESTANCAMIENTO === ")
-            print(f"Última mejor potencia: {mejor_potencia:.2f} MW")
-            logging.info(f"=== PARA POR ESTANCAMIENTO === Última mejor potencia: {mejor_potencia:.2f} MW")
-            break
+        # if contador_estancamiento >= MAX_ESTANCAMIENTO :
+        #     print(" === PARA POR ESTANCAMIENTO === ")
+        #     print(f"Última mejor potencia: {mejor_potencia:.2f} MW")
+        #     logging.info(f"=== PARA POR ESTANCAMIENTO === Última mejor potencia: {mejor_potencia:.2f} MW")
+        #     break
         
         if evaluaciones % 500 == 0 :
             logging.info(f"Evaluación: {evaluaciones/MAX_EVALUACIONES}| T={t_actual:.2f} | Actual={potencia_actual:.2f} | Mejor={mejor_potencia:.2f}")

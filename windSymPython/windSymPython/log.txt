@@ -1,34 +1,41 @@
-Inicio SA. Potencias inicial 50952509.85 MW
-Evaluaci髇: 3, Nueva mejor potencia: 51067719.31 MW
-Evaluaci髇: 4, Nueva mejor potencia: 51494357.90 MW
-Evaluaci髇: 5, Nueva mejor potencia: 51545214.56 MW
-Evaluaci髇: 7, Nueva mejor potencia: 51933909.69 MW
-Evaluaci髇: 8, Nueva mejor potencia: 52074082.72 MW
-Evaluaci髇: 13, Nueva mejor potencia: 52171221.03 MW
-Evaluaci髇: 20, Nueva mejor potencia: 52182794.15 MW
-Evaluaci髇: 21, Nueva mejor potencia: 52413323.24 MW
-Evaluaci髇: 27, Nueva mejor potencia: 52579737.00 MW
-Evaluaci髇: 30, Nueva mejor potencia: 52711191.05 MW
-Evaluaci髇: 39, Nueva mejor potencia: 52725786.45 MW
-Evaluaci髇: 45, Nueva mejor potencia: 52766762.48 MW
-Evaluaci髇: 58, Nueva mejor potencia: 52769289.35 MW
-Evaluaci髇: 63, Nueva mejor potencia: 52774030.39 MW
-Evaluaci髇: 64, Nueva mejor potencia: 52803377.78 MW
-Evaluaci髇: 77, Nueva mejor potencia: 52823933.53 MW
-Evaluaci髇: 80, Nueva mejor potencia: 52878985.54 MW
-Evaluaci髇: 81, Nueva mejor potencia: 52893380.86 MW
-Evaluaci髇: 93, Nueva mejor potencia: 52908480.05 MW
-Evaluaci髇: 129, Nueva mejor potencia: 52919671.42 MW
-Evaluaci髇: 143, Nueva mejor potencia: 52922918.85 MW
-Evaluaci髇: 173, Nueva mejor potencia: 52934781.61 MW
-Evaluaci髇: 194, Nueva mejor potencia: 52953402.48 MW
-Evaluaci髇: 214, Nueva mejor potencia: 52988589.87 MW
-Evaluaci髇: 314, Nueva mejor potencia: 52989243.18 MW
-Evaluaci髇: 338, Nueva mejor potencia: 52991810.62 MW
-Evaluaci髇: 344, Nueva mejor potencia: 52997929.04 MW
-Evaluaci髇: 366, Nueva mejor potencia: 53013706.08 MW
-Evaluaci髇: 384, Nueva mejor potencia: 53014611.35 MW
-Evaluaci髇: 414, Nueva mejor potencia: 53028130.49 MW
-Evaluaci髇: 467, Nueva mejor potencia: 53029821.02 MW
-Evaluaci髇: 0.5| T=10.14 | Actual=53029821.02 | Mejor=53029821.02
-=== PARA POR ESTANCAMIENTO === 趌tima mejor potencia: 53029821.02 MW
+Inicio SA. Potencias inicial 52509562.71 MW
+Evaluaci贸n:  2, Nueva mejor potencia: 52555710.78 MW, Temperatura: 10000.00
+Evaluaci贸n: 14, Nueva mejor potencia: 52587902.45 MW, Temperatura: 9462.37
+Evaluaci贸n: 20, Nueva mejor potencia: 52677790.83 MW, Temperatura: 9204.50
+Evaluaci贸n: 25, Nueva mejor potencia: 52683250.39 MW, Temperatura: 8994.98
+Evaluaci贸n: 33, Nueva mejor potencia: 52687700.85 MW, Temperatura: 8669.62
+Evaluaci贸n: 42, Nueva mejor potencia: 52697843.77 MW, Temperatura: 8317.64
+Evaluaci贸n: 43, Nueva mejor potencia: 52725782.09 MW, Temperatura: 8279.42
+Evaluaci贸n: 50, Nueva mejor potencia: 52902121.70 MW, Temperatura: 8016.78
+Evaluaci贸n: 51, Nueva mejor potencia: 52907209.32 MW, Temperatura: 7979.95
+Evaluaci贸n: 64, Nueva mejor potencia: 52911262.00 MW, Temperatura: 7516.23
+Evaluaci贸n: 66, Nueva mejor potencia: 52955755.47 MW, Temperatura: 7447.32
+Evaluaci贸n: 77, Nueva mejor potencia: 52958865.42 MW, Temperatura: 7079.46
+Evaluaci贸n: 93, Nueva mejor potencia: 52961932.18 MW, Temperatura: 6576.58
+Evaluaci贸n: 155, Nueva mejor potencia: 52963514.94 MW, Temperatura: 4943.11
+Evaluaci贸n: 185, Nueva mejor potencia: 52968905.71 MW, Temperatura: 4305.27
+Evaluaci贸n: 197, Nueva mejor potencia: 52984148.18 MW, Temperatura: 4073.80
+Evaluaci贸n: 220, Nueva mejor potencia: 52985961.59 MW, Temperatura: 3664.38
+Evaluaci贸n: 243, Nueva mejor potencia: 52987541.02 MW, Temperatura: 3296.10
+Evaluaci贸n: 255, Nueva mejor potencia: 53011050.21 MW, Temperatura: 3118.89
+Evaluaci贸n: 289, Nueva mejor potencia: 53025890.40 MW, Temperatura: 2666.86
+Evaluaci贸n: 376, Nueva mejor potencia: 53033685.06 MW, Temperatura: 1786.49
+Evaluaci贸n: 0.16666666666666666| T=1004.62 | Actual=53033685.06 | Mejor=53033685.06
+Evaluaci贸n: 514, Nueva mejor potencia: 53044179.76 MW, Temperatura: 946.24
+Evaluaci贸n: 559, Nueva mejor potencia: 53045678.59 MW, Temperatura: 769.13
+Evaluaci贸n: 643, Nueva mejor potencia: 53046265.64 MW, Temperatura: 522.40
+Evaluaci贸n: 687, Nueva mejor potencia: 53047053.78 MW, Temperatura: 426.58
+Evaluaci贸n: 821, Nueva mejor potencia: 53047448.85 MW, Temperatura: 230.14
+Evaluaci贸n: 866, Nueva mejor potencia: 53051486.17 MW, Temperatura: 187.07
+Evaluaci贸n: 0.3333333333333333| T=100.46 | Actual=53051486.17 | Mejor=53051486.17
+Evaluaci贸n: 1213, Nueva mejor potencia: 53053558.13 MW, Temperatura: 37.84
+Evaluaci贸n: 1276, Nueva mejor potencia: 53070029.00 MW, Temperatura: 28.31
+Evaluaci贸n: 1301, Nueva mejor potencia: 53071968.52 MW, Temperatura: 25.23
+Evaluaci贸n: 1373, Nueva mejor potencia: 53072464.79 MW, Temperatura: 18.11
+Evaluaci贸n: 1447, Nueva mejor potencia: 53079898.88 MW, Temperatura: 12.88
+Evaluaci贸n: 0.5| T=10.05 | Actual=53079898.88 | Mejor=53079898.88
+Evaluaci贸n: 1992, Nueva mejor potencia: 53088442.51 MW, Temperatura: 1.05
+Evaluaci贸n: 0.6666666666666666| T=1.00 | Actual=53088442.51 | Mejor=53088442.51
+Evaluaci贸n: 2074, Nueva mejor potencia: 53094718.09 MW, Temperatura: 0.72
+Evaluaci贸n: 0.8333333333333334| T=0.10 | Actual=53094718.09 | Mejor=53094718.09
+Evaluaci贸n: 1.0| T=0.01 | Actual=53094718.09 | Mejor=53094718.09
