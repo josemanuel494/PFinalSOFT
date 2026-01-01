@@ -23,7 +23,11 @@ MAX_EVALUACIONES = 3000
 
 def cargar_datos_viento(): 
     """
-        Función para cargar los datos del viento proporcionados
+        Cargar los datos del viento desde el fichero MAT.
+
+        Returns:
+            numpy.ndarray | None: Vector `vVec` con las velocidades del viento (forma 2xn)
+                si el fichero se carga correctamente, o `None` si no se encuentra el fichero.
     """
 
     try : 
@@ -36,7 +40,11 @@ def cargar_datos_viento():
     
 def generar_solucion_inicial(): 
     """
-        Función para generar un grid aleatorio con N_TURBINAS
+        Generar una solución inicial aleatoria con `N_TURBINAS` ubicadas en el grid.
+
+        Returns:
+            numpy.ndarray: Matriz de forma `(GRID_SIZE, GRID_SIZE)` con valores 0/1 donde
+                1 indica la presencia de una turbina.
     """
 
     # Generar un vector de ceros
@@ -53,8 +61,13 @@ def generar_solucion_inicial():
 
 def mover_turbina(solucion_actual): 
     """
-        Función para mover una turbina de una 
-        posición (1) a otra posición (0). 
+        Mover aleatoriamente una turbina desde su posición actual a un hueco libre.
+
+        Args:
+            solucion_actual (numpy.ndarray): Matriz `(GRID_SIZE, GRID_SIZE)` con 0/1.
+
+        Returns:
+            numpy.ndarray: Nueva matriz con la turbina movida (misma forma que la entrada).
     """
 
     vecino = np.copy(solucion_actual)
@@ -77,14 +90,19 @@ def mover_turbina(solucion_actual):
 
 def sa(vVec): 
     """
-        Algoritmo de Temple Simulado (Simulated Annealing)
-        Params:     
-            vVec: vector de 2xn veloidades del viento
+        Algoritmo de Temple Simulado (Simulated Annealing) para optimizar la
+        disposición de turbinas en el grid.
+
+        Args:
+            vVec (numpy.ndarray): Matriz o vector 2xn con las velocidades del viento.
 
         Returns:
-            mejor_solucion: mejor solución encontrada
-            mejor_potencia: potencia de la mejor solución
-            historial_fitness: historial de potencias durante la ejecución
+            tuple:
+                - mejor_solucion (numpy.ndarray): Matriz `(GRID_SIZE, GRID_SIZE)` con la
+                  mejor disposición de turbinas encontrada (0/1).
+                - mejor_potencia (float): Potencia asociada a `mejor_solucion` en MW.
+                - historial_fitness (list[float]): Lista con la mejor potencia registrada
+                  tras cada evaluación.
     """
 
     # Parámetros del algoritmo
